@@ -13,11 +13,11 @@ module "templates_branch_policy_auto_reviewers" {
   project_id = "ID of a project"
 
   auto_reviewer_ids = ["ID of a reviewer (GUID)"]
-  
+
   settings = {
-    submitter_can_vote          = false # Defaults to false
+    submitter_can_vote          = false                # Defaults to false
     path_filters                = ["path/to/folder/*"] # Defaults to ["*"]
-    minimum_number_of_reviewers = 1 # Defaults to 1
+    minimum_number_of_reviewers = 1                    # Defaults to 1
   }
 
   scopes = [
