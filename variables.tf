@@ -39,4 +39,5 @@ variable "settings" {
     path_filters                = optional(list(string), ["*"])
     minimum_number_of_reviewers = optional(number, 1)
   })
+  default = {}
 }
